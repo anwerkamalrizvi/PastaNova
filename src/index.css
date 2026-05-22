@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0f172a;
+    color: #f8fafc;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #1e293b;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #f59e0b;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-slate-800 border border-slate-700 rounded-xl p-6 shadow-lg;
+  }
+  .card-hover {
+    @apply card transition-all duration-150 hover:border-brand-500/50 cursor-pointer;
+  }
+  .btn-primary {
+    @apply bg-brand-500 hover:bg-brand-600 text-slate-900 font-semibold py-2 px-4 rounded-lg transition-all duration-150 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-secondary {
+    @apply bg-slate-700 hover:bg-slate-600 text-slate-100 font-semibold py-2 px-4 rounded-lg transition-all duration-150;
+  }
+  .btn-danger {
+    @apply bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded-lg transition-all duration-150;
+  }
+  .input-field {
+    @apply w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-brand-500 transition-colors duration-150;
+  }
+  .select-field {
+    @apply w-full bg-slate-900 border border-slate-600 rounded-lg px-3 py-2 text-slate-100 focus:outline-none focus:border-brand-500 transition-colors duration-150;
+  }
+  .label {
+    @apply block text-slate-400 text-sm font-medium mb-1;
+  }
+  .status-normal {
+    @apply border-l-4 border-emerald-500;
+  }
+  .status-warning {
+    @apply border-l-4 border-brand-500;
+  }
+  .status-critical {
+    @apply border-l-4 border-red-500;
+  }
+  .badge-normal {
+    @apply inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30;
+  }
+  .badge-warning {
+    @apply inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-brand-500/20 text-brand-400 border border-brand-500/30;
+  }
+  .badge-critical {
+    @apply inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-red-500/20 text-red-400 border border-red-500/30 animate-pulse;
+  }
+  .badge-info {
+    @apply inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-blue-500/20 text-blue-400 border border-blue-500/30;
+  }
+  .page-enter {
+    @apply animate-fade-in;
+  }
+  .nav-item {
+    @apply flex items-center gap-3 px-4 py-3 rounded-lg text-slate-400 hover:text-slate-100 hover:bg-slate-700/50 transition-all duration-150 cursor-pointer font-medium;
+  }
+  .nav-item-active {
+    @apply flex items-center gap-3 px-4 py-3 rounded-lg text-brand-400 bg-brand-500/10 border border-brand-500/20 font-semibold cursor-pointer;
+  }
+}
+
+/* Custom typing animation for dots */
+.typing-dot:nth-child(1) { animation: typingDot 1.4s infinite 0s; }
+.typing-dot:nth-child(2) { animation: typingDot 1.4s infinite 0.2s; }
+.typing-dot:nth-child(3) { animation: typingDot 1.4s infinite 0.4s; }
+
+@keyframes typingDot {
+  0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
+  30% { transform: translateY(-6px); opacity: 1; }
+}
+
+/* Pulsing agent status */
+@keyframes agentPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4); }
+  50% { box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); }
+}
+.agent-pulse {
+  animation: agentPulse 2s infinite;
+}
+
+/* Health bar gradient */
+.health-bar-fill {
+  background: linear-gradient(90deg, #10b981, #f59e0b, #ef4444);
+  background-size: 300% 100%;
+}
+
+/* Glass morphism effect */
+.glass {
+  background: rgba(30, 41, 59, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Chat message prose styling */
+.prose-industrial {
+  @apply text-slate-200 leading-relaxed;
+}
+.prose-industrial strong {
+  @apply text-brand-400 font-semibold;
+}
+.prose-industrial ul {
+  @apply list-disc list-inside space-y-1 my-2;
+}
+.prose-industrial ol {
+  @apply list-decimal list-inside space-y-1 my-2;
+}
+.prose-industrial h3 {
+  @apply text-slate-100 font-semibold text-base mt-3 mb-1;
+}
+.prose-industrial p {
+  @apply mb-2;
+}
+.prose-industrial code {
+  @apply bg-slate-700 text-brand-300 rounded px-1 py-0.5 text-sm;
+}

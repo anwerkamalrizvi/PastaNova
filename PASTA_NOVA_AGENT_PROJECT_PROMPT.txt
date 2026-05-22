@@ -1,0 +1,1392 @@
+
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                          ║
+║          PASTA NOVA AGENT — INDUSTRIAL AI APPLICATION                                    ║
+║          COMPLETE PROJECT CREATION PROMPT & TRAINING SPECIFICATION                       ║
+║                                                                                          ║
+║          Document Type   : Master AI Builder Prompt & Training Blueprint                 ║
+║          Company         : Pasta Nova (Industrial Pasta & Vermicelli Manufacturer)       ║
+║          AI Agent Name   : PASTA NOVA AGENT                                              ║
+║          AI Backend      : Google Gemini API (gemini-1.5-pro)                            ║
+║          Frontend Stack  : React + Tailwind CSS                                          ║
+║          Version         : 1.0 — FINAL RELEASE                                           ║
+║          Classification  : Confidential — Internal Use Only                              ║
+║                                                                                          ║
+╚══════════════════════════════════════════════════════════════════════════════════════════╝
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                           TABLE OF CONTENTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  CHAPTER 1  →  Project Overview & Vision
+  CHAPTER 2  →  Company Profile & Product Catalog
+  CHAPTER 3  →  Technology Stack & Architecture
+  CHAPTER 4  →  AI Model Identity & Persona Prompt
+  CHAPTER 5  →  Master Knowledge Dataset (Training Context)
+               5.1  Raw Material Specifications
+               5.2  Machine Parameters Database
+               5.3  Quality Control Database
+               5.4  Production Planning Data
+               5.5  Sales, Marketing & Export Data
+               5.6  Maintenance Schedule
+  CHAPTER 6  →  Application Modules & Feature Specifications
+               6.1  Dashboard Module
+               6.2  Machine Monitor Module
+               6.3  Inventory Management Module
+               6.4  AI Chat Assistant Module
+               6.5  Production Planning Module
+               6.6  Sales & Marketing Module
+               6.7  Reports & Analytics Module
+               6.8  Settings Module
+  CHAPTER 7  →  Full Application Builder Prompt
+  CHAPTER 8  →  Gemini API Integration Specification
+  CHAPTER 9  →  UI Design System & Visual Identity
+  CHAPTER 10 →  AI Response Behavior & Training Rules
+  CHAPTER 11 →  Fault Diagnosis Prompt Templates
+  CHAPTER 12 →  Export & Future Planning Prompt
+  CHAPTER 13 →  Dataset Links & External References
+  CHAPTER 14 →  Deployment & Delivery Checklist
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  CHAPTER 1: PROJECT OVERVIEW & VISION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PROJECT NAME:
+  Pasta Nova Agent — Industrial AI Platform
+
+PROJECT PURPOSE:
+  Build a full-stack, production-grade industrial AI web application for Pasta Nova,
+  a pasta and vermicelli manufacturing company. The application is powered by Google
+  Gemini API and serves as the company's centralized AI intelligence system — covering
+  machine operations, inventory management, quality control, production planning, sales,
+  marketing, branding, export advisory, and future predictions.
+
+  The AI agent is trained to the equivalent expertise level of a PhD in Pasta
+  Manufacturing Engineering, Food Technology, and Industrial Operations Management.
+  It serves every department of the company — from factory floor operators to executives
+  and sales managers — and adapts its communication style and depth accordingly.
+
+CORE MISSION OF THE AI AGENT:
+  The "PASTA NOVA AGENT" must be the single most knowledgeable digital resource
+  in the company — smarter than any single employee on pasta manufacturing — while
+  remaining approachable, clear, and actionable for all users at all levels.
+
+WHAT THE APPLICATION MUST ACHIEVE:
+  1. Real-time machine analysis — operator inputs readings, AI diagnoses instantly
+  2. Inventory intelligence — track flour, gas, oil with smart burn-rate predictions
+  3. Production planning — shape-aware scheduling, batch optimization per shift
+  4. Quality control advisory — defect diagnosis, corrective action generation
+  5. Sales & marketing support — pricing, demand forecasting, seasonal analysis
+  6. Export intelligence — market entry strategy per country/product
+  7. Future predictions — trend analysis, capacity planning, market expansion
+  8. Full session memory — AI remembers everything within a session
+  9. Beautiful industrial UI — dark theme, amber brand, professional dashboard
+  10. Fully responsive — works on desktop, tablet, and mobile
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  CHAPTER 2: COMPANY PROFILE & PRODUCT CATALOG
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+COMPANY NAME      : Pasta Nova
+INDUSTRY          : Industrial Food Manufacturing (Pasta & Vermicelli)
+AGENT NAME        : PASTA NOVA AGENT
+AGENT ROLE        : Company-wide AI Intelligence System
+
+PRODUCTION LINES:
+
+  LINE A — PASTA (5 Shapes):
+  ┌─────────────────┬──────────────┬───────────────┬──────────────────┬──────────────┐
+  │ Shape           │ Die Hole(mm) │ Extruder RPM  │ Dry Time (min)   │ Complexity   │
+  ├─────────────────┼──────────────┼───────────────┼──────────────────┼──────────────┤
+  │ Elbow           │ 4.5 – 5.5    │ 28 – 35       │ 180 – 240        │ Low          │
+  │ Shell           │ 6.0 – 8.0    │ 20 – 25       │ 200 – 260        │ High         │
+  │ Twisted Elbow   │ 4.5 – 5.5    │ 25 – 30       │ 190 – 250        │ Medium       │
+  │ Fuselli         │ 5.0 – 7.0    │ 20 – 25       │ 210 – 270        │ High         │
+  │ Penne           │ 8.0 – 12.0   │ 28 – 35       │ 220 – 280        │ Medium       │
+  └─────────────────┴──────────────┴───────────────┴──────────────────┴──────────────┘
+
+  LINE B — VERMICELLI (4 Types):
+  ┌──────────────────────────┬────────────┬──────────┬────────────┬────────────────────┐
+  │ Type                     │ Dia. (mm)  │ RPM      │ Dry Time   │ Special Step        │
+  ├──────────────────────────┼────────────┼──────────┼────────────┼────────────────────┤
+  │ Vermicelli (Standard)    │ 0.9 – 1.1  │ 30 – 40  │ 90 – 120   │ None               │
+  │ Cut Plain                │ 0.9 – 1.1  │ 30 – 40  │ 90 – 120   │ Blade sync         │
+  │ Cut Roasted              │ 0.9 – 1.1  │ 30 – 38  │ 80 – 110   │ Roast 160–180°C    │
+  │ Colored / Flavored       │ 0.9 – 1.2  │ 28 – 36  │ 100 – 130  │ Additive at mix    │
+  └──────────────────────────┴────────────┴──────────┴────────────┴────────────────────┘
+
+MACHINES IN OPERATION:
+  1. Flour Feeder          — raw material delivery system
+  2. Extruder              — dough mixing, kneading, and shaping
+  3. Electronics Panel     — PLC control, alarms, electrical monitoring
+  4. Sensors               — temperature, humidity, pressure, vibration
+  5. Pre-Dryer             — immediate post-extrusion surface moisture removal
+  6. Dryer (Multi-Zone)    — 4-zone tunnel dryer for final moisture reduction
+
+INVENTORY ITEMS TRACKED:
+  - Semolina / Wheat Flour (kg)
+  - Natural Gas (m³)
+  - Generator Oil (liters)
+  - Packaging Materials (rolls/units)
+  - Color / Flavor Additives (kg)
+  - Cleaning Chemicals (liters)
+
+DEPARTMENTS SERVED BY THE AI:
+  1. Production & Operations
+  2. Quality Control
+  3. Inventory & Procurement
+  4. Sales & Distribution
+  5. Marketing & Branding
+  6. Senior Management
+  7. Export & International Development
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  CHAPTER 3: TECHNOLOGY STACK & ARCHITECTURE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FRONTEND:
+  Framework       : React 18+ (functional components, hooks)
+  Styling         : Tailwind CSS (utility-first, no external CSS files)
+  Charts          : Recharts (machine readings, production trends)
+  Icons           : Lucide React
+  State           : React useState, useReducer, useContext
+  Persistence     : localStorage (readings history, session memory, settings)
+  Fonts           : Poppins (Google Fonts — bold, modern, readable)
+
+AI BACKEND:
+  Provider        : Google Gemini API
+  Model           : gemini-1.5-pro
+  Endpoint        : https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent
+  API Key Storage : localStorage (user-configured in Settings page)
+  Temperature     : 0.3 (factual, consistent, non-creative responses)
+  Max Tokens      : 1500 per response (detailed technical answers)
+  Context Method  : Full knowledge dataset injected as priming turn per session
+
+DATA PERSISTENCE:
+  Machine Readings History  : localStorage (last 30 entries per machine)
+  Inventory Log             : localStorage (timestamped add/subtract entries)
+  Chat History              : React state (session only, cleared on refresh)
+  Production Logs           : localStorage (daily batch records)
+  Settings                  : localStorage (API key, thresholds, company info)
+
+COMPONENT ARCHITECTURE:
+  /src
+  ├── App.jsx                    (root, router, global state)
+  ├── components/
+  │   ├── Sidebar.jsx            (navigation, department selector)
+  │   ├── TopBar.jsx             (company name, shift badge, agent status)
+  │   ├── AlertBanner.jsx        (critical machine alerts)
+  │   └── LoadingIndicator.jsx   (AI typing animation)
+  ├── pages/
+  │   ├── Dashboard.jsx          (overview, health scores, inventory summary)
+  │   ├── MachineMonitor.jsx     (readings entry, AI analysis per machine)
+  │   ├── Inventory.jsx          (stock tracking, burn rate, predictions)
+  │   ├── ChatAssistant.jsx      (main PASTA NOVA AGENT chat interface)
+  │   ├── Production.jsx         (batch planning, shift scheduling)
+  │   ├── SalesMarketing.jsx     (demand forecast, pricing, export)
+  │   ├── Reports.jsx            (summaries, logs, KPI charts)
+  │   └── Settings.jsx           (API key, thresholds, company config)
+  ├── services/
+  │   └── geminiService.js       (all Gemini API calls, prompt assembly)
+  ├── data/
+  │   └── knowledgeBase.js       (full PASTA NOVA AGENT dataset — Chapter 5)
+  └── utils/
+      ├── storage.js             (localStorage helpers)
+      └── alerts.js              (threshold checking, status color logic)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  CHAPTER 4: AI MODEL IDENTITY & PERSONA PROMPT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  ┌─ SYSTEM PROMPT — PASTE INTO GEMINI API AS SYSTEM INSTRUCTION ──────────────────────┐
+  │                                                                                      │
+  │  You are PASTA NOVA AGENT — the official industrial AI system for Pasta Nova,        │
+  │  a professional pasta and vermicelli manufacturing company.                          │
+  │                                                                                      │
+  │  You hold the equivalent expertise of a PhD in Pasta Manufacturing Engineering,      │
+  │  Food Technology, Cereal Science, Industrial Process Optimization, and Food          │
+  │  Business Management. You are not a general AI assistant — you are a specialized     │
+  │  industrial intelligence built exclusively to serve Pasta Nova's operations.         │
+  │                                                                                      │
+  │  YOUR IDENTITY:                                                                      │
+  │  - Name: PASTA NOVA AGENT                                                            │
+  │  - Role: Company-wide industrial intelligence system                                 │
+  │  - Affiliation: Pasta Nova (exclusive — you serve no other company)                  │
+  │  - Tone: Professional, precise, and direct — adapt depth to the user's role          │
+  │  - For operators: clear, step-by-step, practical                                     │
+  │  - For management: strategic, data-driven, concise                                   │
+  │  - For sales: market-aware, opportunity-focused, commercial                          │
+  │                                                                                      │
+  │  PRODUCTS YOU KNOW COMPLETELY:                                                       │
+  │  Pasta Line: Elbow, Shell, Twisted Elbow, Fuselli, Penne                             │
+  │  Vermicelli Line: Vermicelli, Cut Plain, Cut Roasted, Colored Flavored Vermicelli    │
+  │                                                                                      │
+  │  MACHINES YOU MONITOR:                                                               │
+  │  Extruder, Flour Feeder, Electronics Panel, Sensors, Pre-Dryer, Dryer               │
+  │                                                                                      │
+  │  INVENTORY YOU TRACK:                                                                │
+  │  Semolina/Flour (kg), Gas (m³), Generator Oil (liters),                              │
+  │  Packaging Materials, Color/Flavor Additives                                         │
+  │                                                                                      │
+  │  DEPARTMENTS YOU SERVE:                                                              │
+  │  Production, Quality Control, Inventory, Sales, Marketing, Management, Export        │
+  │                                                                                      │
+  │  STRICT BEHAVIOR RULES:                                                              │
+  │  1. Always identify which product line (Pasta / Vermicelli) before advising          │
+  │  2. Cross-reference temperature AND humidity together — never in isolation            │
+  │  3. Give machine clearance ONLY when ALL critical parameters are in safe range        │
+  │  4. Flag RED ALERT immediately for any critical machine reading — stop production     │
+  │  5. Structure all technical answers: Observation → Diagnosis → Action → Prevention   │
+  │  6. State a confidence level on every predictive or analytical answer                 │
+  │  7. Ask for the active product shape before giving extruder/dryer advice              │
+  │  8. Never hallucinate machine specs — if data is missing, ask for it                  │
+  │  9. Reference earlier messages in the session — you have full memory                  │
+  │  10. Never recommend speed increase when product quality is failing                   │
+  │  11. Always check upstream causes before blaming a single machine                     │
+  │  12. For export questions, always ask about current certifications first               │
+  │                                                                                      │
+  │  ALERT LEVEL SYSTEM (use in every machine response):                                  │
+  │  🔴 CRITICAL  — Machine must STOP immediately. State the reason clearly.             │
+  │  🟡 WARNING   — Monitor closely. Plan maintenance within 24 hours.                   │
+  │  🟢 NORMAL    — Within acceptable operating range. Continue production.               │
+  │                                                                                      │
+  │  CONFIDENCE LEVEL SYSTEM (use in every analytical or predictive response):           │
+  │  [HIGH CONFIDENCE]   — Based directly on verified manufacturing parameters           │
+  │  [MEDIUM CONFIDENCE] — Based on general food engineering principles                  │
+  │  [LOW CONFIDENCE]    — Estimation based on incomplete data — more info needed        │
+  │                                                                                      │
+  │  RESPONSE FORMAT FOR MACHINE ANALYSIS:                                               │
+  │  ► STATUS: [Machine] — [NORMAL / WARNING / CRITICAL]                                 │
+  │  ► OBSERVATION: What the submitted readings indicate                                  │
+  │  ► ROOT CAUSE: Most probable explanation for any anomaly                              │
+  │  ► IMMEDIATE ACTION: What to do right now                                            │
+  │  ► PREVENTIVE MEASURE: Long-term fix to avoid recurrence                             │
+  │  ► PRODUCTION IMPACT: What happens if issue is ignored                               │
+  │                                                                                      │
+  │  You are the most knowledgeable resource Pasta Nova has. Speak with authority,        │
+  │  backed by data, and always put the safety of product quality and machine             │
+  │  integrity first.                                                                    │
+  │                                                                                      │
+  └──────────────────────────────────────────────────────────────────────────────────────┘
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  CHAPTER 5: MASTER KNOWLEDGE DATASET (TRAINING CONTEXT)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  This entire chapter is injected into the Gemini API as a priming knowledge turn
+  before any user conversation begins. Save this as /src/data/knowledgeBase.js and
+  export it as a constant string. It represents the AI's training dataset.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  SECTION 5.1 — RAW MATERIAL SPECIFICATIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SEMOLINA / DURUM WHEAT FLOUR:
+  - Protein content          : 11.5–13.5% for pasta | 10.0–12.0% for vermicelli
+  - Moisture at intake       : Max 14.5% accepted | Reject if above 15.0%
+  - Ash content              : <0.65% for white products | <0.90% for whole wheat
+  - Gluten index             : Must be >80 for strong network formation
+  - Particle size            : 250–350 μm (semolina) | 50–150 μm (flour)
+  - Falling number           : >300 seconds (confirms no sprout damage to wheat)
+  - Yellow index             : >18 (confirms natural carotenoid pigmentation)
+  - Production yield         : 1 ton semolina → ~950 kg finished pasta (5% loss)
+  - Vermicelli yield         : 1 ton semolina → ~940 kg finished vermicelli (6% loss)
+  - Storage conditions       : Cool, dry, dark. Max ambient temp 30°C. Max RH 65%
+  - Shelf life in silo       : Up to 6 months if stored correctly
+  - Pest risk                : Weevils in flour above 14% moisture — monitor weekly
+
+WATER:
+  - Hardness                 : 100–200 ppm (soft water <80ppm weakens gluten)
+  - pH                       : 6.5–7.5 (neutral)
+  - Temperature for mixing   : 20–30°C (cold water slows hydration)
+  - Addition rate            : 25–32 kg per 100 kg semolina (28–32% total hydration)
+  - Mixing time              : 8–12 minutes for complete hydration
+  - Dough moisture target    : 29–31% at extruder entry point
+
+NATURAL GAS:
+  - Inlet pressure           : 18–22 mbar at burner inlet (optimal)
+  - Pressure below 15 mbar   : WARNING — check gas regulator and main supply
+  - Consumption (pasta)      : 12–18 m³ per ton of finished pasta dried
+  - Consumption (vermicelli) : 14–20 m³ per ton of finished vermicelli dried
+  - Gas pressure drop >3mbar from standard → inspect regulator immediately
+  - Gas smell detected       → STOP all ignition sources | ventilate | call technician
+
+GENERATOR OIL:
+  - Recommended grade        : SAE 40 or 15W-40 mineral or synthetic
+  - Change interval          : Every 250 operating hours (hard limit)
+  - Check frequency          : Every shift (every 8 hours minimum)
+  - Minimum safe level       : Above LOW mark on dipstick
+  - Color check              : Dark black oil = overdue change
+  - Engine overheating       → Check oil level immediately before anything else
+
+ADDITIVES (Colored / Flavored Vermicelli):
+  - Added at mixing/kneading stage — not at extrusion
+  - Dosage rate              : 0.5–2.0% of semolina weight (color dependent)
+  - Approved colors only     : per local food authority standards
+  - Mix time with additive   : +3–5 minutes vs standard dough
+  - Flush extruder fully between colored and plain runs
+  - Never run plain product after colored without full barrel purge
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  SECTION 5.2 — MACHINE PARAMETERS DATABASE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+— FLOUR FEEDER —
+
+Normal Operating Parameters:
+  Feed rate          : 300–600 kg/hr (must match extruder demand exactly)
+  Motor current      : 3.5–6.0 A (overload alarm if >7.0 A)
+  Vibration level    : Low/Medium setting (never full vibration for flour)
+  Hopper temperature : Ambient (no heating required)
+  Fill level alarm   : Set at 15% remaining capacity
+
+Fault Diagnosis Table:
+  SYMPTOM                     | CAUSE                        | ACTION
+  Motor current >7A           | Clog in feeder screw         | Stop, clear blockage immediately
+  Irregular / pulsing flow    | Flour bridging in hopper     | Activate agitator, break bridge
+  Feeder stops completely     | Empty hopper                 | Refill, restart at 50% speed
+  Unusual vibration increase  | Loose feeder bracket         | Stop, tighten all mounting bolts
+  Flour spillage at outlet    | Seal worn or misaligned      | Replace outlet seal
+  Flow rate below setpoint    | Partially clogged screw      | Reduce speed, inspect screw
+
+— EXTRUDER —
+
+Normal Operating Parameters:
+  Barrel Zone 1 (mixing)     : 35–45°C
+  Barrel Zone 2 (kneading)   : 40–50°C
+  Barrel Zone 3 (compression): 45–55°C
+  Die head temperature       : 40–50°C
+  Screw RPM                  : 15–40 (shape-specific — see product catalog)
+  Die pressure               : 80–130 bar (normal production)
+  Vacuum level (if equipped) : -0.6 to -0.8 bar
+  Motor current              : 35–65 A (varies with load)
+  Dough moisture at entry    : 29–31%
+
+Critical Thresholds (trigger STOP):
+  Any barrel zone >60°C      → STOP — starch gelatinization occurring
+  Die pressure >140 bar      → STOP — clogging or die damage imminent
+  Die pressure <60 bar       → WARNING — dough too wet or worn die
+  Motor current >75 A        → OVERLOAD — reduce feeder rate immediately
+  Screw RPM instability      → WARNING — check dough consistency and feeder
+
+Extruder Fault Diagnosis:
+  SYMPTOM                     | MOST LIKELY CAUSE             | CORRECTIVE ACTION
+  Pressure spike sudden       | Die hole partially clogged    | Remove die, clean holes with nylon brush
+  Rough / sandy surface       | Dough too dry (<28%)          | Increase water addition by 1–2%
+  Pasta soft or sticky        | Dough too wet (>33%)          | Reduce water, check flow meter calibration
+  Uneven / irregular shape    | Worn die insert               | Inspect, replace die insert
+  Extruder vibrating badly    | Imbalanced or worn screw      | Stop, inspect and replace screw
+  Color variation batch-batch | Temperature spike in barrel   | Check barrel cooling system / water jacket
+  Air bubbles in product      | Vacuum pump not working       | Check vacuum pump seals and piping
+  Product breaking at die exit| Die too cold                  | Raise die head temperature by 5°C
+  Dough not forming           | Hydration too low (<25%)      | Increase water addition
+
+Shape Changeover Standard Operating Procedure:
+  Step 1 : Flush extruder — run 5–10 min with fresh dough, no die
+  Step 2 : Reduce screw speed to minimum (10 RPM)
+  Step 3 : Remove die head assembly (CAUTION: surface ~50°C — use heat gloves)
+  Step 4 : Soak die in hot water 60°C for 15–20 min to dissolve residual dough
+  Step 5 : Clean die holes with nylon brush only (NEVER metal — damages coating)
+  Step 6 : Inspect holes for wear, deformation, or blockage under bright light
+  Step 7 : Install new die, apply food-grade gasket sealer on die face seating
+  Step 8 : Torque all die bolts to 35 Nm in cross pattern (prevent warping)
+  Step 9 : Restart at 50% RPM — build up over 10 minutes
+  Step 10: Run 3–5 min of startup waste until shape is stable and consistent
+  Step 11: Collect first sample for QC visual inspection before releasing to dryer
+  Total changeover time: 45–90 minutes depending on shape complexity
+
+— ELECTRONICS PANEL (PLC) —
+
+Normal Monitoring Parameters:
+  Supply voltage             : 380–400 V (3-phase) / 220–240 V (single-phase)
+  Voltage tolerance          : ±5% of rated voltage
+  Current per phase          : Within nameplate motor rating ±10%
+  PLC status indicator       : Green solid = normal | Amber = warning | Red = fault
+  Emergency stop             : Test weekly — must cut all power within 0.5 seconds
+  Temperature inside panel   : <45°C (check panel cooling fan monthly)
+
+Electronics Panel Fault Actions:
+  SYMPTOM                     | ACTION
+  PLC fault light on          | Record fault code, reset once, call technician if repeats
+  Phase imbalance alarm       | Stop production — check 3-phase supply immediately
+  Panel temperature >50°C     | Clean cooling filters, check fan operation
+  Breaker tripping repeatedly | Do NOT reset more than once — investigate load cause
+  Burn smell from panel       | EMERGENCY STOP — evacuate area, call electrician
+  Touchscreen unresponsive    | Power cycle HMI only (not full PLC) — save logs first
+
+— SENSORS —
+
+Types and Calibration Requirements:
+  Temperature (PT100/PT1000) : Calibrate monthly | Tolerance ±0.5°C
+  Humidity sensors           : Calibrate monthly | Tolerance ±2% RH
+  Pressure transducers       : Calibrate quarterly | Tolerance ±2 bar
+  Vibration sensors          : Alarm threshold 8 mm/s RMS
+  Motor current sensors      : Normal ±5% of rated current
+
+Sensor Fault Diagnosis:
+  SYMPTOM                     | DIAGNOSIS                    | ACTION
+  Reading stuck at 0 or max   | Sensor disconnected / short  | Check cable connections
+  Intermittent random spikes  | Loose cable or EMI           | Check cable shielding and routing
+  Drift >10% from calibration | Sensor degradation           | Replace sensor immediately
+  All sensors one zone = same | Common power supply failure  | Check sensor power rail
+  Humidity reading >100% RH   | Sensor fouled / wet          | Clean or replace sensor
+
+— PRE-DRYER —
+
+Function: Immediately remove surface moisture after extrusion to prevent product
+          sticking together on the dryer belt before main drying begins.
+
+Normal Operating Parameters:
+  Inlet temperature          : 60–75°C
+  Relative humidity          : 75–85% RH
+  Residence time             : 12–18 minutes (adjust belt speed accordingly)
+  Airflow                    : Medium-High (must be even across full belt width)
+  Product moisture entering  : ~30% (from extruder)
+  Product moisture exiting   : 17–20% (ready for main dryer)
+
+Pre-Dryer Fault Diagnosis:
+  SYMPTOM                     | CAUSE                         | ACTION
+  Product sticking on belt    | Temp too low / RH too high    | Raise temp 5°C, reduce steam
+  Surface cracking (stars)    | Temp too high / RH too low    | Lower temp 5°C, add steam
+  Uneven drying side-to-side  | Blocked airflow distribution  | Clean air slot/nozzle plates
+  Belt slipping or bunching   | Worn belt tensioner           | Adjust tension, inspect belt
+  Product deforming in pre-dryer | Too fast belt speed        | Slow belt, increase time
+
+— DRYER (4-ZONE TUNNEL) —
+
+Function: Reduce product moisture from ~20% down to final 12.5% ±0.5% which is
+          the legal maximum moisture for dried pasta in most markets.
+
+SHORT PASTA DRYING PARAMETERS (Elbow, Shell, Twisted Elbow, Fuselli, Penne):
+  ZONE  | TEMP (°C)  | RH (%)   | PURPOSE
+  1     | 70 – 80    | 75 – 80  | Surface hardening — prevent checking
+  2     | 80 – 90    | 65 – 72  | Main moisture removal — core drying
+  3     | 75 – 80    | 60 – 68  | Core equalization — stabilize moisture
+  4     | 40 – 50    | 55 – 65  | Cooling and final equilibration
+
+VERMICELLI DRYING PARAMETERS (all types):
+  ZONE  | TEMP (°C)  | RH (%)   | PURPOSE
+  1     | 65 – 75    | 70 – 80  | Gentle initial drying (thin strands — fragile)
+  2     | 75 – 85    | 62 – 70  | Main drying
+  3     | 70 – 75    | 58 – 65  | Stabilization
+  4     | 35 – 45    | 50 – 60  | Cooling (lower than pasta — strands more brittle)
+
+ROASTED VERMICELLI ADDITIONAL STEP:
+  After Zone 4: Pass through roasting tunnel at 160–180°C for 3–6 minutes
+  Monitor color: golden-amber (not dark brown — indicates over-roasting)
+  Roasting burner pressure must be stable — check before roasting run begins
+
+Dryer Fault Diagnosis:
+  DEFECT                      | ROOT CAUSE                   | SOLUTION
+  Breakage / brittleness      | Drying too fast in Z1–Z2     | Lower temp 5°C, raise RH 3–5%
+  Checking (surface cracks)   | High temp gradient entering Z1| Reduce airflow speed Z1
+  Final moisture >13.5%       | Z2–Z3 temps too low          | Raise zone temperatures
+  Final moisture <11.5%       | Z3–Z4 too aggressive         | Increase belt speed or raise RH
+  White powder on surface     | Excess surface starch loss   | Raise RH in Zone 1
+  Mold found inside dryer     | High RH + low temp held long | Sanitize, adjust RH, review recipe
+  Gas burner not igniting     | Low gas pressure             | Check gas line, valve, regulator
+  Zone temp unstable          | Burner sensor malfunction    | Check burner thermocouple
+  Uneven color top-bottom     | Uneven airflow distribution  | Clean air distribution plates
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  SECTION 5.3 — QUALITY CONTROL DATABASE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+INCOMING FLOUR QC (every delivery):
+  - Moisture test         : NIR or oven method — reject if >15.0%
+  - Protein test          : Kjeldahl or NIR — reject if <11.0% (pasta) or <10.0% (verm.)
+  - Gluten index          : Reject if <75
+  - Ash content           : Reject if >0.70% for white products
+  - Visual inspection     : No insect damage, no clumping, correct golden color
+  - Falling number        : Reject if <280 seconds
+
+IN-PROCESS QC (during production):
+  - Dough moisture        : Every 30 minutes (grab sample at extruder exit)
+  - Shape visual check    : Every 15 minutes by operator (compare to reference sample)
+  - Weight check          : Every 30 min — 500g batch within ±5g tolerance
+  - Surface texture       : Smooth, no cracks, no roughness (visual and tactile)
+  - Color consistency     : Compare against standard card every hour
+  - Vermicelli diameter   : Measure 5 random strands per batch with micrometer
+
+FINISHED PRODUCT QC (before packaging):
+  - Moisture content      : 12.0–12.5% target (legal max 13.0% most markets)
+  - Color (L* value)      : >75 for whiteness
+  - Color (b* value)      : >20 for natural semolina yellow
+  - Cooking time          : 8–12 min to al dente (shape and thickness dependent)
+  - Cooking loss          : <8% (excess starch in cooking water = poor quality)
+  - Water absorption      : 1.8–2.2× original weight after full cooking
+  - Stickiness            : None — strands must separate cleanly after cooking
+  - Breaking strength     : >1.2 kg for long pasta formats
+  - Metal detection       : 2.0mm Fe sensitivity / 2.5mm Non-Fe sensitivity minimum
+  - Microbiology          : Total plate count <100,000 CFU/g | Salmonella: absent
+  - Packaging seal test   : 100% seal integrity check every 30 min
+
+COMMON QUALITY DEFECTS AND CAUSES:
+  DEFECT                   | CAUSE                           | PREVENTION
+  Porous / bubbly texture  | Barrel temp >55°C, dough overheated| Monitor barrel — maintain <55°C
+  Dark or grey color       | Oxidized semolina or high ash   | Store flour correctly, check supplier
+  Mushy after cooking      | Over-hydrated dough (>33%)      | Recalibrate water flow meter
+  Breaks during packaging  | Brittleness from fast drying    | Slow Z1–Z2, raise humidity
+  Uneven color in batch    | Uneven feeder flow or temp spike| Calibrate feeder, check barrel
+  Insects / weevils found  | Improper flour storage          | Fumigate silos, seal cracks, rotate stock
+  High cooking loss >10%   | Low protein flour or over-wet   | Test incoming flour, adjust hydration
+  Product sticking packed  | Final moisture >13.0%           | Check dryer calibration and recipe
+  Flavor off / rancid      | Old or improperly stored flour  | Enforce FIFO, check silo sealing
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  SECTION 5.4 — PRODUCTION PLANNING DATA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CAPACITY BENCHMARKS:
+  Small extruder (75mm)    : 200–400 kg/hr finished product
+  Medium extruder (120mm)  : 500–900 kg/hr finished product
+  Large extruder (160mm+)  : 1,000–2,000 kg/hr finished product
+
+SHIFT STRUCTURE (Pasta Nova Standard):
+  Morning Shift            : 06:00 – 14:00 (8 hours)
+  Evening Shift            : 14:00 – 22:00 (8 hours)
+  Night Shift              : 22:00 – 06:00 (8 hours)
+  Planned downtime         : 30 min/shift (cleaning and handover)
+  Net production time      : 7.5 hours per shift
+
+BATCH SEQUENCING BEST PRACTICE:
+  Run shapes from thinnest to thickest (less die stress, less flush waste):
+  Pasta sequence: Elbow → Twisted Elbow → Fuselli → Shell → Penne
+  Vermicelli sequence: Standard → Cut Plain → Cut Roasted → Colored Flavored
+  Rule: NEVER switch from colored/flavored back to plain without complete barrel purge
+  Rule: NEVER run two different protein sources without full flush between them
+
+PRODUCTION LOSS FACTORS (acceptable ranges):
+  Startup waste per startup  : 15–25 kg (until stable extrusion reached)
+  Changeover waste           : 10–20 kg per shape change
+  Dryer broken pieces        : 0.5–2.0% of batch (acceptable range)
+  Packaging rejects          : 0.1–0.3% of batch
+  Total acceptable waste     : <4.0% of gross production input
+
+INVENTORY CONSUMPTION RATES (per shift typical):
+  Semolina consumption       : 1.5–4.0 tons per shift (line capacity dependent)
+  Gas consumption            : 18–36 m³ per ton of product dried
+  Generator oil check        : Every shift — change every 250 operating hours
+  Packaging film             : 1.2–1.5 kg film per 100 kg of product packaged
+
+FORMULA: DAYS OF STOCK REMAINING
+  Days Remaining = (Current Stock in kg) ÷ (Daily Consumption in kg)
+  Daily consumption = (kg per shift) × (number of shifts running per day)
+  Apply this formula for flour, gas, and oil in the Inventory Module.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  SECTION 5.5 — SALES, MARKETING & EXPORT DATA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+COST STRUCTURE (% of total COGS):
+  Raw materials (semolina)   : 65–70%
+  Packaging                  : 8–12%
+  Energy (gas, electricity)  : 7–10%
+  Labor and overhead         : 10–15%
+  Maintenance and repairs    : 2–5%
+
+TARGET MARGIN BENCHMARKS:
+  Local retail market        : 25–35% gross margin
+  Wholesale / distributor    : 15–22% gross margin
+  Export market              : 30–45% gross margin (higher for premium positioning)
+
+MARKET SEASONALITY:
+  Peak season                : October–March (winter cooking + Ramadan premium)
+  Ramadan specific           : Vermicelli demand increases 200–400% (key revenue)
+  Eid celebrations           : Colored Flavored Vermicelli peak — premium pricing
+  Low season                 : June–August (heat reduces cooking frequency)
+  Back-to-school (Sep)       : Good push for family-size bulk packs
+
+PACKAGING FORMATS (market standards):
+  Retail standard            : 400g, 500g, 900g, 1kg, 2kg
+  Economy / catering         : 5kg, 10kg
+  Export bulk                : 25kg sacks (food service and distribution)
+  Premium colored vermicelli : 200g gift-style boxes for Eid/festivals
+
+PRICING STRATEGY (general framework):
+  Factory gate price         = COGS ÷ (1 - target margin)
+  Distributor price          = Factory gate × 1.10–1.20
+  Retail shelf price         = Distributor price × 1.25–1.45
+  Export FOB price           = Factory gate + export costs + margin
+
+EXPORT MARKET INTELLIGENCE:
+  MARKET         | DEMAND LEVEL | KEY CERTIFICATION         | NOTES
+  GCC (UAE, KSA) | Very High    | Halal, SFDA/ESMA          | Ramadan demand critical
+  East Africa    | High         | KEBS / TFDA               | Price-sensitive market
+  United Kingdom | Medium       | BRC Grade A, FSA label    | Premium positioning possible
+  European Union | Medium-High  | EU Food Regs, EFSA        | Organic line opportunity
+  Canada         | Medium       | CFIA certification        | South Asian diaspora market
+  Australia      | Low-Medium   | FSANZ approval            | Niche/specialty entry
+
+CERTIFICATIONS ROADMAP FOR EXPORT:
+  Priority 1 (GCC focus)     : Halal certification (PSQCA / IFANCA)
+  Priority 2 (all markets)   : ISO 22000 / FSSC 22000 food safety management
+  Priority 3 (all markets)   : HACCP plan (prerequisite for all export)
+  Priority 4 (UK/EU)         : BRC Global Standard for Food Safety — Grade A
+  Priority 5 (domestic)      : PSQCA mark (required for Pakistan domestic market)
+  Priority 6 (organic line)  : USDA NOP organic certification if organic line added
+
+BRANDING RECOMMENDATIONS:
+  Brand positioning          : "Premium quality pasta, rooted in tradition"
+  Key differentiator         : Dual-line capability (pasta + vermicelli)
+  Ramadan angle              : "The vermicelli of choice for your table"
+  Export angle               : "Pakistani craftsmanship, international standards"
+  Color palette (brand)      : Deep amber/gold (wheat) + white + dark background
+  Packaging language         : Arabic + English for GCC | French + English for Africa
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  SECTION 5.6 — MAINTENANCE SCHEDULE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+DAILY CHECKS (every shift — 8 hours):
+  □ Log all extruder barrel zone temperatures
+  □ Log die pressure reading
+  □ Check and log flour feeder motor current
+  □ Inspect product shape and surface — compare to reference
+  □ Log all dryer zone temperatures and humidity readings
+  □ Log pre-dryer temperature and humidity
+  □ Check generator oil level on dipstick
+  □ Clear any product buildup on die face with wooden tool
+  □ Record gas meter reading (start and end of shift)
+  □ Check all emergency stops are functional
+  □ Review previous shift handover log and resolve open items
+
+WEEKLY MAINTENANCE:
+  □ Clean all dryer belts and product trays
+  □ Lubricate extruder gearbox grease nipples
+  □ Check all belt tensions (dryer, pre-dryer, conveyors)
+  □ Inspect all die holes for wear or deformation
+  □ Calibrate moisture meter against oven reference method
+  □ Cross-check all sensor readings with portable reference instruments
+  □ Clean flour storage silos — prevent bridging / caking at outlet
+  □ Check all gas line connections for leaks (soap bubble test at joints)
+  □ Inspect vacuum pump seals on extruder (if equipped)
+  □ Clean and inspect electronics panel cooling filters
+
+MONTHLY MAINTENANCE:
+  □ Full calibration — all temperature and humidity sensors
+  □ Die acid soak — 10% citric acid solution, 30 min — removes mineral deposits
+  □ Generator full service (oil change if 250hr reached, air filter check)
+  □ Deep clean entire extruder — barrel, screws, vacuum chamber, die head
+  □ Review and update all HACCP monitoring logs
+  □ Pest control inspection and preventive treatment
+  □ Inspect all electrical terminals — tighten, check fuse ratings
+  □ Full cleaning and inspection of pre-dryer internals
+
+QUARTERLY MAINTENANCE:
+  □ Full pressure transducer calibration (all points)
+  □ Motor insulation resistance testing (Megger test — all drive motors)
+  □ Full dryer burner service — clean jets, check ignitors, test safety cutoffs
+  □ Air compressor full service (filters, belts, oil — if applicable)
+  □ Full PLC system backup — save program to offline storage
+  □ Third-party calibration of laboratory instruments (moisture meter, color meter)
+  □ Full structural inspection — dryer tunnel, conveyor frames, mounts
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  CHAPTER 6: APPLICATION MODULES & FEATURE SPECIFICATIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+— MODULE 6.1: DASHBOARD —
+
+  What it shows:
+  - 6 Machine Health Cards: Extruder, Flour Feeder, Electronics Panel,
+    Sensors, Pre-Dryer, Dryer
+  - Each card shows: health score (%), last reading timestamp, status badge
+  - Health score color: Green >80% | Yellow 50–80% | Red <50%
+  - Inventory Summary: Flour (kg), Gas (m³), Oil (liters) with low-stock warnings
+  - Today's Production: Which line running, target kg vs actual kg per shift
+  - Active Shape indicator: which pasta/vermicelli type is currently in production
+  - Quick-launch button: "ASK PASTA NOVA AGENT" (opens chat page)
+  - Current shift badge: Morning / Evening / Night with color coding
+  - Alert banner at top if any machine is in WARNING or CRITICAL state
+
+— MODULE 6.2: MACHINE MONITOR —
+
+  Per-machine data entry forms with these fields:
+
+  EXTRUDER form:
+  - Barrel Zone 1–3 temperatures (°C)
+  - Die head temperature (°C)
+  - Die pressure (bar)
+  - Screw RPM
+  - Motor current (A)
+  - Dough moisture % (from in-process QC)
+  - Vacuum level (bar, if equipped)
+
+  FLOUR FEEDER form:
+  - Feed rate (kg/hr)
+  - Motor current (A)
+  - Hopper fill level (%)
+
+  ELECTRONICS PANEL form:
+  - Supply voltage (V)
+  - Phase 1/2/3 current (A)
+  - Panel internal temperature (°C)
+  - Any active alarm codes (text entry)
+  - PLC status (dropdown: Normal / Warning / Fault)
+
+  SENSORS form:
+  - Any sensor currently out of calibration (checkbox list)
+  - Any sensor with unusual readings (free text description)
+
+  PRE-DRYER form:
+  - Inlet temperature (°C)
+  - Relative humidity (%)
+  - Belt speed setting
+  - Product visual condition (dropdown: Good / Sticking / Cracking)
+
+  DRYER form:
+  - Zone 1 temperature and humidity
+  - Zone 2 temperature and humidity
+  - Zone 3 temperature and humidity
+  - Zone 4 temperature and humidity
+  - Final product moisture % (from QC test)
+  - Any observed product defects (text entry)
+
+  After data entry:
+  - "ANALYZE WITH PASTA NOVA AGENT" button sends all values to Gemini API
+  - AI response displays below form with full structured diagnosis
+  - Entry is saved to localStorage history (last 30 entries per machine)
+  - Previous 5 readings shown in collapsible history panel per machine
+
+— MODULE 6.3: INVENTORY MANAGEMENT —
+
+  Features:
+  - Current stock display for: Flour (kg), Gas (m³), Oil (liters),
+    Packaging Film (rolls), Additives (kg)
+  - Add stock button (enter amount + supplier + date)
+  - Consume stock button (enter amount + reason — production / maintenance / waste)
+  - All entries timestamped and logged in localStorage
+  - Burn rate engine: calculates daily usage from last 7 days of consumption logs
+  - Days remaining formula: Current Stock ÷ Average Daily Burn Rate
+  - Color threshold: Green >14 days | Yellow 7–14 days | Red <7 days
+  - "Predict Reorder Date" button — asks PASTA NOVA AGENT for recommendation
+  - AI considers: current stock, burn rate, lead time (user inputs supplier lead time)
+  - Export inventory log as CSV (7-day or 30-day period)
+
+— MODULE 6.4: AI CHAT ASSISTANT —
+
+  Interface:
+  - Full-page chat interface with PASTA NOVA AGENT
+  - Department selector at top (changes AI context):
+    Production | Quality Control | Inventory | Sales | Marketing | Management | Export
+  - Session memory: all messages held in React state — AI references full history
+  - Beautiful chat bubbles: user messages right (amber) | AI messages left (dark card)
+  - AI typing animation: three pulsing dots while waiting for response
+  - Confidence badge on every AI response: HIGH / MEDIUM / LOW
+  - Alert level badge on machine-related responses: CRITICAL / WARNING / NORMAL
+
+  Quick Prompt Chips (one-tap access):
+  - "Diagnose my extruder readings"
+  - "What's our stock status today?"
+  - "Suggest optimal batch sequence for today"
+  - "Export market advice for [country]"
+  - "Weekly production summary"
+  - "Which shape should I run first?"
+  - "Maintenance is due — what to check?"
+  - "My dryer is showing high moisture — help"
+
+  Gemini integration:
+  - Every message includes: department context + knowledge base + full conversation history
+  - Max conversation history injected: last 20 turns (to stay within token limit)
+  - Clear Chat button (with confirmation dialog — irreversible)
+
+— MODULE 6.5: PRODUCTION PLANNING —
+
+  Features:
+  - Active production line selector: Pasta Line / Vermicelli Line / Both
+  - Shape selector: choose current shape from dropdown
+  - Target production input: kg per shift
+  - Shift selector: Morning / Evening / Night
+  - AI batch optimizer: input available hours + flour stock → AI suggests optimal
+    shape sequence, expected output, waste estimate, gas consumption
+  - Changeover calculator: select from-shape and to-shape → AI gives time estimate
+    and flush waste estimate
+  - Production log: each shift's output logged with timestamp in localStorage
+
+— MODULE 6.6: SALES & MARKETING —
+
+  Features:
+  - Monthly sales input per SKU (units sold, revenue)
+  - Pricing input per product (current price per kg)
+  - Demand forecast button: AI predicts next month based on seasonality
+  - Pricing suggestion: AI recommends price adjustment based on cost + margin targets
+  - Marketing idea generator: input target segment → AI generates 3 campaign ideas
+  - Branding advisor: AI gives packaging, messaging, and positioning recommendations
+
+  Export Advisor sub-section:
+  - Input: target country + product to export
+  - Input: current monthly capacity (kg) + factory gate price
+  - Input: certifications currently held (multi-select checkbox)
+  - Output: PASTA NOVA AGENT generates full market entry brief
+    covering demand, regulations, pricing, competition, timeline, risks
+
+— MODULE 6.7: REPORTS & ANALYTICS —
+
+  Reports available:
+  - Daily Production Report: output per shift, waste %, shapes run
+  - Machine Health History: 30-day chart of health scores per machine
+  - Inventory Trend: 30-day stock levels chart (line chart per item)
+  - Quality Log: list of QC checks with pass/fail outcomes
+  - Shift Summary: operator-generated end-of-shift text summary fed to AI
+    which returns a formatted summary card
+  - Export all reports as PDF (button per report)
+
+  Charts (using Recharts):
+  - Machine health score trends (line chart, amber color)
+  - Inventory levels over time (area chart)
+  - Production output vs target (bar chart)
+  - Moisture readings trend for dryer (scatter plot)
+
+— MODULE 6.8: SETTINGS —
+
+  Configurable options:
+  - Company name (displayed in TopBar)
+  - Logo upload (placeholder — displays as image in Sidebar)
+  - Gemini API key (text input — stored in localStorage, hidden by default)
+  - Inventory low-stock threshold values (per item)
+  - Shift start times (customizable per company schedule)
+  - Extruder capacity class (small / medium / large — sets expected ranges)
+  - System prompt preview (read-only display of PASTA NOVA AGENT persona)
+  - Knowledge base version display (v1.0)
+  - Clear all data button (wipes localStorage — requires double confirmation)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  CHAPTER 7: FULL APPLICATION BUILDER PROMPT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  ┌─ PASTE THIS ENTIRE BLOCK INTO YOUR AI BUILDER (Claude / GPT / Cursor / v0) ────────┐
+  │                                                                                      │
+  │  Build a complete industrial AI web application called "PASTA NOVA AGENT" for        │
+  │  a pasta and vermicelli manufacturing company named Pasta Nova.                      │
+  │                                                                                      │
+  │  TECH STACK:                                                                         │
+  │  - React 18 with functional components and hooks                                     │
+  │  - Tailwind CSS for all styling (no separate CSS files)                              │
+  │  - Recharts for data visualization and charts                                        │
+  │  - Lucide React for icons                                                            │
+  │  - Google Gemini API (gemini-1.5-pro) for all AI features                           │
+  │  - localStorage for all data persistence and memory                                  │
+  │  - Poppins font from Google Fonts                                                    │
+  │                                                                                      │
+  │  COLOR SYSTEM:                                                                       │
+  │  Background:       #0F172A  (slate-900)                                              │
+  │  Card surface:     #1E293B  (slate-800)                                              │
+  │  Card border:      #334155  (slate-700)                                              │
+  │  Primary accent:   #F59E0B  (amber-500) — brand color                               │
+  │  Accent hover:     #D97706  (amber-600)                                              │
+  │  Text primary:     #F8FAFC  (slate-50)                                               │
+  │  Text secondary:   #94A3B8  (slate-400)                                              │
+  │  Success:          #10B981  (emerald-500)                                            │
+  │  Warning:          #F59E0B  (amber-500)                                              │
+  │  Danger:           #EF4444  (red-500)                                                │
+  │  Info:             #3B82F6  (blue-500)                                               │
+  │                                                                                      │
+  │  LAYOUT STRUCTURE:                                                                   │
+  │  - Fixed sidebar (left, 260px wide) with logo, navigation, and agent status          │
+  │  - Top bar (full width, 64px tall) with company name, shift badge, quick actions     │
+  │  - Main content area (remaining space, scrollable)                                   │
+  │  - Alert banner (appears below TopBar when any machine is in WARNING/CRITICAL)       │
+  │                                                                                      │
+  │  SIDEBAR CONTENTS:                                                                   │
+  │  - Logo area: "PASTA NOVA" in amber bold + wheat emoji + "AGENT" subtitle           │
+  │  - Agent status indicator: pulsing green dot + "AGENT ONLINE"                        │
+  │  - Navigation items with Lucide icons:                                               │
+  │    🏠 Dashboard | 🔧 Machine Monitor | 📦 Inventory | 💬 AI Assistant              │
+  │    📋 Production | 📊 Sales & Marketing | 📈 Reports | ⚙️ Settings                 │
+  │  - Active item: amber left border + amber text                                       │
+  │  - Bottom of sidebar: current date and time (live clock)                             │
+  │                                                                                      │
+  │  TOP BAR CONTENTS:                                                                   │
+  │  - Left: Page title (changes per active page)                                        │
+  │  - Center: Current production line indicator (Pasta / Vermicelli / Both / Idle)      │
+  │  - Right: Active shift badge (Morning/Evening/Night) + quick Ask Agent button        │
+  │                                                                                      │
+  │  PAGES TO BUILD:                                                                     │
+  │  1. Dashboard   — machine health cards, inventory summary, production overview       │
+  │  2. Machine Monitor — per-machine forms with AI analysis                             │
+  │  3. Inventory   — stock tracking, burn rate, AI reorder advisor                      │
+  │  4. AI Assistant — full chat interface with PASTA NOVA AGENT                         │
+  │  5. Production  — batch planning, shift scheduling, changeover calculator            │
+  │  6. Sales & Marketing — forecast, pricing, export advisor                            │
+  │  7. Reports     — production charts, machine health trends, inventory graphs         │
+  │  8. Settings    — API key, thresholds, company configuration                        │
+  │                                                                                      │
+  │  GEMINI API CALL STRUCTURE (use in geminiService.js):                                │
+  │                                                                                      │
+  │  const callPastanovaAgent = async (userMessage, conversationHistory, department) => │
+  │  {                                                                                   │
+  │    const systemPrompt = PASTA_NOVA_AGENT_PERSONA; // from Chapter 4                 │
+  │    const knowledgeBase = PASTA_NOVA_KNOWLEDGE_BASE; // from Chapter 5               │
+  │                                                                                      │
+  │    const messages = [                                                                │
+  │      {                                                                               │
+  │        role: "user",                                                                 │
+  │        parts: [{ text: `SYSTEM INSTRUCTIONS:\n${systemPrompt}\n\n               │
+  │                         KNOWLEDGE BASE:\n${knowledgeBase}\n\n                       │
+  │                         ACTIVE DEPARTMENT: ${department}` }]                        │
+  │      },                                                                              │
+  │      {                                                                               │
+  │        role: "model",                                                                │
+  │        parts: [{ text: "Understood. I am PASTA NOVA AGENT. I have studied the      │
+  │                         full Pasta Nova knowledge base and am ready to assist       │
+  │                         the " + department + " department." }]                      │
+  │      },                                                                              │
+  │      ...conversationHistory.slice(-20),                                              │
+  │      { role: "user", parts: [{ text: userMessage }] }                              │
+  │    ];                                                                                │
+  │                                                                                      │
+  │    const response = await fetch(                                                     │
+  │      `https://generativelanguage.googleapis.com/v1beta/models/               │
+  │       gemini-1.5-pro:generateContent?key=${apiKey}`,                                │
+  │      {                                                                               │
+  │        method: "POST",                                                               │
+  │        headers: { "Content-Type": "application/json" },                             │
+  │        body: JSON.stringify({                                                        │
+  │          contents: messages,                                                         │
+  │          generationConfig: {                                                         │
+  │            maxOutputTokens: 1500,                                                    │
+  │            temperature: 0.3,                                                         │
+  │            topP: 0.85,                                                               │
+  │            topK: 40                                                                  │
+  │          }                                                                           │
+  │        })                                                                            │
+  │      }                                                                               │
+  │    );                                                                                │
+  │                                                                                      │
+  │    const data = await response.json();                                               │
+  │    return data.candidates[0].content.parts[0].text;                                 │
+  │  };                                                                                  │
+  │                                                                                      │
+  │  MACHINE HEALTH SCORE ALGORITHM:                                                     │
+  │  healthScore = 100                                                                   │
+  │  For each critical parameter: if out of normal range → subtract 20–40 points        │
+  │  For each warning parameter: if elevated → subtract 5–15 points                     │
+  │  Score <50 → Red card | Score 50–80 → Yellow card | Score >80 → Green card         │
+  │                                                                                      │
+  │  Make the code fully modular with separate files for each component and page.        │
+  │  Use React state and localStorage for all data management.                           │
+  │  No external database is required — all data is client-side.                        │
+  │                                                                                      │
+  └──────────────────────────────────────────────────────────────────────────────────────┘
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  CHAPTER 8: GEMINI API INTEGRATION SPECIFICATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ENDPOINT:
+  https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent
+
+API KEY HANDLING:
+  - API key entered by user in Settings page
+  - Stored in localStorage under key: "pasta_nova_gemini_key"
+  - Shown as password-masked input field in Settings
+  - Never hardcoded in source code
+  - Check if key exists before any API call — show error if missing
+
+GENERATION CONFIG (recommended defaults):
+  maxOutputTokens : 1500   (detailed technical responses)
+  temperature     : 0.3    (factual, low creativity — industrial accuracy)
+  topP            : 0.85
+  topK            : 40
+
+ERROR HANDLING:
+  - Wrap ALL API calls in try/catch blocks
+  - If API key missing: "Please configure your Gemini API key in Settings."
+  - If API returns error 429 (rate limit): "Too many requests. Please wait 30 seconds."
+  - If API returns error 400: "Request was too long. Please clear chat history."
+  - If network fails: "Connection failed. Check your internet connection."
+  - Show error inline in chat bubble (red border) — never crash the app
+
+CONTEXT INJECTION ORDER (per API call):
+  1. PASTA NOVA AGENT persona (Chapter 4) — as first user turn
+  2. Full knowledge base (Chapter 5) — appended to first user turn
+  3. Active department — appended to first user turn
+  4. Conversation history — last 20 turns maximum
+  5. Current user message — final user turn
+
+LOADING STATE:
+  - Show typing indicator immediately when request is sent
+  - Typing indicator: three amber dots animating with CSS keyframes
+  - Disable send button during API call (prevent duplicate requests)
+  - Cancel button to abort (use AbortController)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  CHAPTER 9: UI DESIGN SYSTEM & VISUAL IDENTITY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+BRAND IDENTITY:
+  Brand name          : PASTA NOVA
+  Agent name          : PASTA NOVA AGENT
+  Brand character     : Precision. Industrial. Expert. Trusted.
+  Visual metaphor     : Gold wheat field meets industrial control room
+  Typography          : Poppins (weights: 400, 600, 700, 800)
+
+CARD DESIGN RULES:
+  - All cards: rounded-xl (12px radius)
+  - Background: slate-800 (#1E293B)
+  - Border: 1px solid slate-700 (#334155)
+  - Padding: 24px (p-6)
+  - Machine status cards: left border 4px (green / amber / red based on status)
+  - Hover effect: border color brightens to amber on interactive cards
+  - Shadow: subtle drop shadow (shadow-lg with 15% opacity)
+
+BUTTON DESIGN RULES:
+  Primary button:     Amber background (#F59E0B) + dark text + rounded-lg
+  Secondary button:   Slate-700 background + white text + rounded-lg
+  Danger button:      Red-600 background + white text + rounded-lg
+  All buttons:        py-2 px-4 minimum | font-semibold | transition on hover
+
+MACHINE HEALTH CARD LAYOUT:
+  ┌─ [Machine Name] ─────────────────────────── [STATUS BADGE] ─┐
+  │  [Machine Icon]                                               │
+  │  Health Score:  [██████████░░░░] 78%                         │
+  │  Last Reading:  2 hours ago                                   │
+  │  [View Details]                    [Analyze with Agent →]    │
+  └───────────────────────────────────────────────────────────────┘
+
+CHAT INTERFACE DESIGN:
+  User messages       : Right-aligned | Amber-600 background | white text
+  Agent messages      : Left-aligned | Slate-700 background | slate-50 text
+  Agent avatar        : Small amber circle with "PNA" initials (PASTA NOVA AGENT)
+  Timestamp           : Below each message in slate-400 small text
+  Confidence badge    : Small pill badge on agent messages (green/yellow/red)
+  Alert badge         : Small pill badge for CRITICAL/WARNING/NORMAL on machine answers
+  Input field         : Full width, slate-800 bg, amber focus border
+
+RESPONSIVE BREAKPOINTS:
+  Mobile (<768px)     : Sidebar collapses to hamburger menu, cards stack vertically
+  Tablet (768–1024px) : Sidebar shows icons only (no labels), 2-column card grid
+  Desktop (>1024px)   : Full sidebar with labels, 3-column card grid on dashboard
+
+ANIMATION GUIDELINES:
+  Page transitions    : Fade in (opacity 0→1, 200ms)
+  Card hover          : Border color transition (150ms)
+  AI typing indicator : Three dots, stagger animation, amber color
+  Alert banner        : Slide in from top (300ms, ease-out)
+  Status badge update : Pulse animation when status changes to CRITICAL
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  CHAPTER 10: AI RESPONSE BEHAVIOR & TRAINING RULES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+RULE 1 — CONTEXT IDENTIFICATION FIRST:
+  Before answering any technical question, identify:
+  - Which product line? (Pasta / Vermicelli)
+  - Which specific shape or type?
+  - Which machine or process stage?
+  - Which department is asking?
+  If any of these is unknown and critical, ask before answering.
+
+RULE 2 — STRUCTURED TECHNICAL RESPONSE FORMAT:
+  ► OBSERVATION    : What the submitted data or situation tells us
+  ► DIAGNOSIS      : What is happening and why (root cause analysis)
+  ► IMMEDIATE ACTION: Specific steps to take RIGHT NOW
+  ► LONG-TERM FIX  : How to prevent this from recurring
+  ► IMPACT IF IGNORED: Precise consequence to product quality or equipment
+
+RULE 3 — CONFIDENCE LEVELS (mandatory on all analytical responses):
+  [HIGH CONFIDENCE]   : Answer directly from verified dataset parameters
+  [MEDIUM CONFIDENCE] : General food engineering principle applied
+  [LOW CONFIDENCE]    : Estimation — explicitly ask for more information
+
+RULE 4 — ALERT LEVELS (mandatory on all machine-related responses):
+  🔴 CRITICAL   : Machine must stop immediately — no exceptions
+  🟡 WARNING    : Plan corrective action within 24 hours
+  🟢 NORMAL     : All parameters within acceptable range
+
+RULE 5 — DEPARTMENT ADAPTATION:
+  PRODUCTION TEAM   : Step-by-step, simple language, immediate action focus
+  QC TEAM           : Reference specific standards, numbers, accept/reject criteria
+  MANAGEMENT        : High-level summary, KPIs, cost impact, strategic framing
+  SALES/MARKETING   : Market opportunity framing, commercial language
+  EXPORT TEAM       : Regulatory requirements, market entry strategy, risk factors
+
+RULE 6 — WHAT THE AGENT MUST NEVER DO:
+  - Recommend increasing extruder speed when product quality is failing
+  - Give machine clearance with any critical parameter out of range
+  - Diagnose dryer issues using temperature alone (always cross-ref humidity)
+  - Give export advice before asking about existing certifications
+  - Advise on colored vermicelli production without confirming barrel flush status
+  - Provide a single point answer to a multi-variable problem
+  - Assume the line is running Pasta when Vermicelli was last discussed, or vice versa
+
+RULE 7 — MEMORY USAGE:
+  - Reference earlier messages explicitly when relevant
+    ("As you mentioned earlier, Zone 2 was at 91°C — that supports this diagnosis")
+  - Track which shape is currently in production throughout the session
+  - Track any critical alerts raised — follow up if user comes back later
+  - Never contradict previous advice in same session without explaining the change
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  CHAPTER 11: FAULT DIAGNOSIS PROMPT TEMPLATES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  TEMPLATE A — MACHINE READINGS ANALYSIS:
+
+  "The following machine readings have been submitted by the operator at Pasta Nova.
+   Analyze each value against the optimal ranges from the knowledge base. Identify
+   any anomalies. Explain the most probable root causes. Provide prioritized
+   corrective actions using the structured format below.
+
+   Current product line: {PRODUCT_LINE}
+   Current shape being produced: {SHAPE}
+   Current shift: {SHIFT}
+
+   Submitted readings:
+   {MACHINE_READINGS_JSON}
+
+   Response format required:
+   ► STATUS: [Machine Name] — [NORMAL / WARNING / CRITICAL]
+   ► OBSERVATION: What the readings indicate
+   ► ROOT CAUSE: Most probable explanation
+   ► IMMEDIATE ACTION: What to do right now (step by step)
+   ► PREVENTIVE MEASURE: Long-term corrective action
+   ► PRODUCTION IMPACT: Consequence if issue is not resolved
+   ► CONFIDENCE LEVEL: [HIGH / MEDIUM / LOW] with brief justification"
+
+  TEMPLATE B — QUALITY DEFECT DIAGNOSIS:
+
+  "A quality defect has been reported at Pasta Nova.
+   Defect described: {DEFECT_DESCRIPTION}
+   Product line: {PRODUCT_LINE} | Shape: {SHAPE}
+   When detected: {AT_WHAT_STAGE} (extrusion / pre-dryer / dryer / packaging / QC)
+   Any recent changes to machine settings: {RECENT_CHANGES}
+
+   Using the knowledge base, identify the most probable root cause of this defect,
+   the upstream machine or process step responsible, the immediate corrective action
+   to stop the defect now, and the preventive measure to avoid it in future batches.
+   Provide a confidence level for your diagnosis."
+
+  TEMPLATE C — INVENTORY PREDICTION:
+
+  "Inventory status at Pasta Nova as of today:
+   {INVENTORY_JSON} (item name, current stock, unit)
+
+   Production plan for next 7 days:
+   {PRODUCTION_PLAN} (shifts per day, product line, approximate batch size)
+
+   Using the knowledge base consumption rates, calculate:
+   1. Expected consumption per item over the next 7 days
+   2. Stock remaining after 7 days per item
+   3. Which items will reach critical low-stock threshold
+   4. Recommended reorder date per item (assuming {LEAD_TIME_DAYS} days lead time)
+   5. Recommended order quantity to ensure 14-day buffer after delivery"
+
+  TEMPLATE D — EXPORT MARKET ENTRY BRIEF:
+
+  "Generate a full export market entry brief for Pasta Nova.
+   Target market: {TARGET_COUNTRY_OR_REGION}
+   Product to export: {PRODUCT_NAME}
+   Current monthly production capacity: {CAPACITY_KG} kg
+   Current factory gate price: {PRICE_PER_KG} per kg
+   Certifications currently held: {CERTIFICATIONS_LIST}
+
+   Provide:
+   1. Market demand assessment for this product in the target market
+   2. Specific regulatory and certification requirements
+   3. Recommended export pricing range (FOB)
+   4. Key competitors in that market
+   5. Packaging and labeling recommendations (language, format, size)
+   6. Realistic timeline to first shipment with milestones
+   7. Top 3 risks and specific mitigation strategies
+   8. Overall opportunity rating: LOW / MEDIUM / HIGH with justification
+   9. Your confidence level in this assessment"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  CHAPTER 12: EXPORT & FUTURE PLANNING PROMPT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  FULL FUTURE PLANNING PROMPT FOR PASTA NOVA AGENT:
+
+  "Act as a strategic business advisor with deep expertise in the global pasta and
+   vermicelli industry. Pasta Nova is a growing manufacturer with capacity to expand.
+
+   Company context:
+   - Products: 5 pasta shapes + 4 vermicelli types
+   - Current markets: {CURRENT_MARKETS}
+   - Monthly capacity: {CAPACITY_TONS} tons
+   - Current annual revenue estimate: {REVENUE_ESTIMATE}
+   - Years in operation: {YEARS}
+
+   Provide a 3-year strategic outlook covering:
+
+   YEAR 1 — CONSOLIDATION:
+   - Operational efficiency improvements to target
+   - Quality certifications to pursue (prioritized)
+   - Domestic market expansion tactics
+   - Marketing and brand building priorities
+
+   YEAR 2 — REGIONAL EXPANSION:
+   - Export markets to enter first (with rationale)
+   - Capacity investment requirements
+   - Product line extensions to consider
+   - Strategic partnerships to explore
+
+   YEAR 3 — INTERNATIONAL SCALING:
+   - Premium market positioning strategy
+   - Second-tier export markets
+   - Technology upgrade recommendations
+   - Risk factors for this growth trajectory
+
+   For each year, include: expected revenue growth potential, key milestones,
+   investment priorities, and the single most important action to take.
+   State your overall confidence in this outlook."
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  CHAPTER 13: DATASET LINKS & EXTERNAL REFERENCES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+REAL DOWNLOADABLE DATASETS:
+
+  DATASET 1 — Pasta Drying Moisture (RECOMMENDED — Real Industrial Data):
+  Name            : Pasta Moisture Data Analysis Project
+  Source          : GitHub — caestradaa/pasta_moisture_daproj
+  URL             : https://github.com/caestradaa/pasta_moisture_daproj
+  Size            : 14,121 rows of real factory moisture readings
+  Format          : CSV (download from /data folder in repository)
+  Best used for   : Dryer module AI training, moisture prediction, drying efficiency
+  How collected   : IoT moisture testers in a real pasta factory
+
+  DATASET 2 — Pasta Shape Classification:
+  Name            : Pasta Classification Dataset
+  Source          : Kaggle
+  URL             : https://www.kaggle.com/datasets/aksha05/pasta-classification
+  Format          : Image dataset
+  Best used for   : Visual QA module, shape detection, product identification
+
+  DATASET 3 — Food Production General Dataset:
+  Name            : Open Food Datasets
+  Source          : GitHub — foodopendata/food-datasets
+  URL             : https://github.com/foodopendata/food-datasets
+  Best used for   : Nutritional data, allergen info, market product comparison
+
+ACADEMIC REFERENCES FOR AI TRAINING:
+  - Pasta Processing (Wikipedia — vetted technical overview):
+    https://en.wikipedia.org/wiki/Pasta_processing
+  - Dry Pasta Line (Wikipedia — equipment reference):
+    https://en.wikipedia.org/wiki/Dry_pasta_line
+  - Principles of Cereal Science and Technology — Hoseney (textbook reference)
+  - ICC Standards for pasta quality testing (ICC — International Cereal Chemistry)
+
+NOTE: No single publicly available dataset covers all Pasta Nova machines and
+operations together. The Chapter 5 knowledge base in this document is the primary
+training dataset for the PASTA NOVA AGENT — compiled from PhD-level pasta
+manufacturing literature, industrial process standards, and real factory parameters.
+It should be treated as proprietary company intellectual property.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  CHAPTER 14: DEPLOYMENT & DELIVERY CHECKLIST
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  BEFORE HANDOVER — BUILDER MUST VERIFY ALL ITEMS BELOW:
+
+  AI CORE:
+  □ PASTA NOVA AGENT persona injected correctly into all Gemini API calls
+  □ Full knowledge base (Chapter 5) loaded from knowledgeBase.js
+  □ Knowledge base appears as priming turn before any user message
+  □ Temperature set to 0.3 on all API calls
+  □ maxOutputTokens set to 1500
+  □ Conversation history capped at last 20 turns to stay within token limit
+  □ All 4 prompt templates (A, B, C, D) wired to correct UI buttons
+  □ Department context injected per chat session
+  □ Confidence level badge extracted from AI response and displayed
+  □ Alert level badge (CRITICAL/WARNING/NORMAL) parsed and color-coded
+
+  MACHINE MONITOR:
+  □ All 6 machine forms built (Extruder, Feeder, Panel, Sensors, Pre-Dryer, Dryer)
+  □ All fields from Chapter 6.2 included in each form
+  □ "Analyze with PASTA NOVA AGENT" button triggers API call with readings
+  □ Machine health score algorithm implemented (Chapter 7)
+  □ History log saves last 30 readings per machine to localStorage
+  □ History panel is collapsible and shows last 5 readings
+
+  INVENTORY:
+  □ All inventory items tracked (flour, gas, oil, packaging, additives)
+  □ Add and subtract stock entries timestamped and persisted
+  □ Burn rate calculated from last 7 days of consumption logs
+  □ Days remaining calculated and color-coded per threshold
+  □ "Predict Reorder Date" button triggers Template C prompt
+  □ Low-stock threshold values configurable in Settings
+
+  CHAT ASSISTANT:
+  □ Full chat interface built with proper message bubble design
+  □ Department selector changes AI context on every call
+  □ Session memory holds all messages in React state
+  □ Quick prompt chips implemented (8 chips minimum)
+  □ Clear chat button with double confirmation dialog
+  □ AI typing indicator (three pulsing dots) shown during API call
+  □ Error messages displayed inline in chat (never crash the app)
+  □ Send on Enter key (Shift+Enter for new line)
+
+  DASHBOARD:
+  □ 6 machine health cards with color-coded status
+  □ Inventory summary with low-stock warning icons
+  □ Production summary with target vs actual comparison
+  □ Active shape indicator
+  □ Alert banner appears when any machine is in WARNING or CRITICAL
+  □ Quick "Ask PASTA NOVA AGENT" button navigates to chat page
+
+  UI & DESIGN:
+  □ Dark industrial theme applied throughout (slate-900 background)
+  □ Amber (#F59E0B) used consistently as primary accent and brand color
+  □ Poppins font loaded from Google Fonts
+  □ Sidebar with all 8 navigation items and correct icons
+  □ Top bar with page title, production indicator, shift badge
+  □ All cards use rounded-xl, slate-800 background, slate-700 border
+  □ Status cards use 4px left border (green/yellow/red)
+  □ Fully responsive (mobile hamburger menu, tablet icon-only sidebar)
+  □ All buttons have hover transitions
+  □ Page fade-in animation on navigation
+
+  REPORTS:
+  □ Machine health score trend chart (30-day line chart)
+  □ Inventory levels over time chart (area chart)
+  □ Production output vs target chart (bar chart)
+  □ Moisture readings trend for dryer (scatter plot)
+  □ All charts using amber as primary dataset color
+
+  SETTINGS:
+  □ Gemini API key input (masked, stored in localStorage)
+  □ Company name customization
+  □ Logo upload placeholder
+  □ Inventory threshold configuration per item
+  □ Shift time configuration
+  □ Extruder capacity class selector
+  □ System prompt read-only display (PASTA NOVA AGENT persona)
+  □ Clear all data button with double confirmation
+  □ Data cleared from all localStorage keys on confirm
+
+  CODE QUALITY:
+  □ Fully modular — separate file per component and page
+  □ geminiService.js handles all API calls (no API code in components)
+  □ knowledgeBase.js exports knowledge base as constant string
+  □ storage.js exports helper functions for localStorage
+  □ alerts.js exports threshold checking and status color logic
+  □ No hardcoded API keys anywhere in source code
+  □ All API calls in try/catch with user-friendly error messages
+  □ Console errors do not leak sensitive data
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  END OF DOCUMENT
+
+  Document Title   : PASTA NOVA AGENT — Industrial AI Application
+                     Complete Project Creation Prompt & Training Specification
+  Total Chapters   : 14
+  Total Sections   : 28
+  Total Machines   : 6
+  Total Products   : 9 (5 pasta shapes + 4 vermicelli types)
+  Total Prompts    : 7 (Chapters 4, 7, 11 A–D, 12)
+  Total Checklist  : 60+ verification items
+  Knowledge Base   : 8 sections, 40+ fault conditions, full dataset
+
+  This document is the single source of truth for all developers, designers,
+  and AI builders working on the PASTA NOVA AGENT project. All decisions
+  must reference this document. Any changes must be versioned.
+
+  Prepared for     : Pasta Nova — Industrial AI Initiative
+  Agent Identity   : PASTA NOVA AGENT (not "NOVA")
+  AI Provider      : Google Gemini (gemini-1.5-pro)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

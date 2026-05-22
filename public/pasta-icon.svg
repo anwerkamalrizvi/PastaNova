@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="32" fill="#1e293b"/>
+  <!-- Amber glow ring -->
+  <circle cx="32" cy="32" r="28" fill="none" stroke="#f59e0b" stroke-width="2" opacity="0.4"/>
+  <!-- Wheat grain shape -->
+  <ellipse cx="32" cy="20" rx="5" ry="10" fill="#f59e0b" opacity="0.9"/>
+  <!-- Pasta strands -->
+  <path d="M20 38 Q32 30 44 38" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M18 43 Q32 35 46 43" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M20 48 Q32 40 44 48" stroke="#d97706" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <!-- Center dot -->
+  <circle cx="32" cy="32" r="3" fill="#fbbf24"/>
+</svg>
