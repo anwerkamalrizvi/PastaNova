@@ -81,36 +81,6 @@ export default function Settings() {
         <h3 className="text-slate-100 font-bold mb-4 flex items-center gap-2">
           <span className="text-lg">🤖</span> AI Configuration
         </h3>
-        <div className="space-y-4">
-          <div>
-            <label className="label">Gemini API Key</label>
-            <div className="relative">
-              <input
-                type={showApiKey ? 'text' : 'password'}
-                value={settings.geminiApiKey || ''}
-                onChange={e => update('geminiApiKey', e.target.value)}
-                className="input-field pr-12 font-mono text-sm"
-                placeholder="AIzaSy..."
-              />
-              <button onClick={() => setShowApiKey(v => !v)} className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-200 transition-colors">
-                {showApiKey ? <EyeOff size={16} /> : <Eye size={16} />}
-              </button>
-            </div>
-            <p className="text-slate-500 text-xs mt-1">Stored locally. Never sent to any server except Google's AI API.</p>
-          </div>
-
-          <div>
-            <label className="label">Google OAuth 2.0 Client ID</label>
-            <input
-              type="text"
-              value={googleClientId}
-              onChange={e => setGoogleClientId(e.target.value)}
-              className="input-field font-mono text-sm"
-              placeholder="xxxxxxxxxx.apps.googleusercontent.com"
-            />
-            <p className="text-slate-500 text-xs mt-1">Required for Google Sign-In. Get this from Google Cloud Console.</p>
-          </div>
-
           <div>
             <label className="label">AI Model</label>
             <div className="input-field opacity-50 cursor-not-allowed text-slate-400">gemini-2.5-flash-preview-05-20</div>
@@ -124,11 +94,6 @@ export default function Settings() {
         <h3 className="text-slate-100 font-bold mb-4 flex items-center gap-2">
           <span className="text-lg">🏭</span> Company Configuration
         </h3>
-        <div className="space-y-4">
-          <div>
-            <label className="label">Company Name</label>
-            <input type="text" value={settings.companyName || ''} onChange={e => update('companyName', e.target.value)} className="input-field" placeholder="Pasta Nova" />
-          </div>
           <div>
             <label className="label">Extruder Capacity Class</label>
             <div className="grid grid-cols-3 gap-3">
